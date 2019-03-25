@@ -1,0 +1,30 @@
+body{
+    background-color:#ccc;
+    font: 20px/1 "Arial";
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid{
+    margin: 2px 10px;
+    display: grid; /* контейнер грид */
+    grid-template-columns: 1fr 2fr 1fr;  /* шаблон для колонок */
+    grid-template-rows: 50px 100px 50px; /* шаблон для строк */
+    grid-auto-rows: 150px; /* высота строки по умолчанию */
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.grid-item{
+    border: 1px solid rgb(0, 32, 136);
+    background: rgb(0, 32, 136);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.grid-item:nth-child(odd){
+    border: 1px solid rgb(83, 95, 131);
+    background: rgb(83, 95, 131);
+}

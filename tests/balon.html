@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .review-item {
+            width: 100%;
+        }
+        .review-item::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .balon {
+        	width: 78%;
+            position: relative;
+            float: left;
+            
+        }
+        .triangle {
+            background-color: teal;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transform: rotate(45deg);
+        }
+        .balon-content {
+            border-radius: 5px;
+            background-color: teal;
+            color: aliceblue;
+            padding: 10px;
+            margin-left: 30px;
+            position: relative;
+        }
+        .review-image {
+        width: 75px;
+        float: left;
+        
+        }
+        .review-image img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="review-item">
+        <div class="review-image">
+            <img src="review.png" alt="">
+        </div>
+        
+        <div class="balon">
+            <div class="triangle"></div>
+            <div class="balon-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum consequatur debitis modi. Molestias
+                omnis
+                ea obcaecati reiciendis, vero asperiores blanditiis officia. Incidunt, tempora non.
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

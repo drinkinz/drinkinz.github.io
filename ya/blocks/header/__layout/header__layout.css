@@ -1,0 +1,5 @@
+.header__layout {
+    position: relative;
+    height: 70px;
+    white-space: nowrap;
+}

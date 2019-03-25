@@ -1,0 +1,44 @@
+.button {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.button_size_s {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.button_size_m {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.button_size_xl {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.button_theme_red {
+    background-color: orangered;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.button_theme_green {
+    background-color: forestgreen;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.header__button {
+    margin: 50px;
+    position: relative;
+    top: 120px;
+    left: 150px;
+}
+
+.aside_button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}

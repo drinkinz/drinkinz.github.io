@@ -1,0 +1,13 @@
+.header__forum {
+    float: right;
+    margin: 20px 15px 0 10px;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, .65)
+}
+
+.header__forum:hover {
+    color: #fff
+}
