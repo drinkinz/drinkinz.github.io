@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*Margin обладает особыми силами*/
+        .header {
+            display: flex;
+            max-width: 400px;
+            background: #069ce2;
+            height: 50px;
+            align-items: center;
+        }
+
+        .title {
+            width: 100px;
+            background: #9deeec;
+            font: 20px sans-serif;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        .signin {
+            margin-left: auto;
+            margin-right: 10px;
+            background: #27447a;
+            color: white;
+            width: 100px;
+            font: 20px sans-serif;
+            border: none;
+
+        }
+
+        /*Margin обладает особыми силами*/
+
+        /*min-width имеет значение*/
+        .book {
+            border: solid 1px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .book .description {
+            font: 10px sans-serif;
+            min-width: 0;
+        }
+
+        .book .buy {
+            margin-left: auto;
+            width: 80px;
+            text-align: center;
+            align-self: center;
+            flex: none;
+        }
+
+        /*min-width имеет значение*/
+
+        .container {
+            display: flex;
+
+            flex-direction: column;
+
+
+        }
+
+        .box {
+            height: 80px;
+            background: red;
+            margin: 5px;
+            flex-basis: 160px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--  /*Margin обладает особыми силами*/-->
+    <div class="header">
+        <div class="title">Hello</div>
+        <button class="signin">sign in</button>
+    </div>
+    <!--  /*Margin обладает особыми силами*/-->
+
+    <!--min-width имеет значение-->
+    <div class="book">
+        <div class="description">
+            Hello world. jfjshgfsjgf jshdgfjsgdfjsgfj jshfgjsfgjs jsdgfjsgf
+        </div>
+        <button class="buy">buy now</button>
+    </div>
+    <div class="book">
+        <div class="description">
+            Hello world. jfjshgfsjgf jshdgfjsgdfjsgfj jshfgjsfgjs jsdgfjsgf
+        </div>
+        <button class="buy">buy now</button>
+    </div>
+    <!--min-width имеет значение-->
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

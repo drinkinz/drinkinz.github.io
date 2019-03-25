@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+figure,
+li {
+    position: relative;
+}
+
+html {
+    background-color: #4da7da;
+    padding: 5%;
+}
+
+body {
+    background-color: #34949c;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h1 {
+    color: #fff;
+    background-color: #b45d57;
+    display: inline-block;
+    padding: 2% 4%;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1em;
+    padding: 0.5em 0 0.25em 0;
+}
+
+p,
+li {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 0.5em 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+    border-color: red;
+}
+
+div.page-wrapper {
+    z-index: 2;
+}
+
+section.intro {
+    padding: 5%;
+}
+
+section.intro div.summary {
+    color: #fff;
+    padding: 15% 0;
+}
+
+section.intro div.summary a,
+div.participation a {
+    color: #fff;
+}
+
+section.intro div.summary p:last-child,
+div.requirements p:last-child {
+    border-top: 2px solid red;
+    margin-top: 1em;
+    padding-top: 1.5em;
+}
+
+h1,
+section.intro div.summary p,
+div.requirements p:last-child {
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+section.intro div.preamble {
+    background-color: #f09a6a;
+    padding: 5% 5% 5% 30%;
+    margin-left: -30%;
+}
+
+div.main {
+    padding: 5%;
+}
+
+aside.sidebar {
+    color: #fff;
+    background-color: #643c50;
+    padding: 2%;
+}
+
+aside.sidebar a {
+    color: #fff;
+}
+
+aside.sidebar ul {
+    padding: 0.5em 0 2em 0;
+}
+
+aside.sidebar ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0.825em 0;
+}
+
+footer {
+    background-color: #b45d57;
+    clear: both;
+    padding: 1em 5%;
+    margin: 1em 0;
+    width: 70%;
+    color: #333;
+}
+
+footer a {
+    margin-right: 1em;
+}
+
+div.explanation {
+    color: #fff;
+    padding: 5%;
+}
+
+div.participation {
+    color: #fff;
+    background-color: #b45d57;
+    padding: 5%;
+}
+
+div.benefits {
+    background-color: #fff;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+div.requirements {
+    background-color: #fff;
+    padding: 5%;
+}
+
+
+@media all and (min-width:700px) {
+    div.extra1 {
+        background: rgba(51, 55, 69, 0.9);
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        top: 0;
+        width: 30%;
+        z-index: 1;
+    }
+
+    section.intro {
+        width: 66.6%;
+    }
+
+    aside.sidebar {
+        position: absolute;
+        top: 2.5%;
+        right: 0;
+        width: 32.75%;
+    }
+
+    div.explanation {
+        float: left;
+        width: 50%;
+    }
+
+    div.participation {
+        float: left;
+        width: 49%;
+    }
+
+    div.benefits {
+        float: left;
+        margin-top: 12%;
+        width: 40%;
+    }
+
+    div.requirements {
+        float: left;
+        width: 59%;
+    }
+}
+
+@media all and (min-width:1025px) {
+    section.intro header h2 {
+        font-size: 6em;
+    }
+
+    aside.sidebar {
+        padding: 5%;
+    }
+}
+
+/* 700 and up */
+@media screen and (min-width:700px) {
+
+    body {
+        font-size: 90%;
+    }
+
+}
+
+/* 800 and up */
+@media screen and (min-width:800px) {
+
+    body {
+        font-size: 100%;
+    }
+
+}
+
+/* 900 and up */
+@media screen and (min-width:900px) {
+
+    body {
+        font-size: 110%;
+    }
+
+}
+
+/* 1500 and up */
+@media screen and (min-width:1500px) {
+
+    body {
+        font-size: 125%;
+    }
+
+}
+
+/* 1800 and up */
+@media screen and (min-width:1800px) {
+
+    body {
+        font-size: 150%;
+    }
+
+}
+
+/* 2100 and up */
+@media screen and (min-width:2100px) {
+
+    body {
+        font-size: 175%;
+    }
+
+}
+
+
+/* 2500 and up */
+@media screen and (min-width:2500px) {
+
+    body {
+        font-size: 200%;
+    }
+
+}

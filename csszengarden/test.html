@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Сад CSS-дзена: Красота CSS-дизайна</title>
+    <link rel="stylesheet" media="screen" href="test.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dave Shea">
+    <meta name="description" content="Демонстрация визуальных достижений CSS-дизайна">
+    <meta name="robots" content="all">
+    <!--[if lt IE 9]>
+    <script src="script/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<!--
+
+
+
+    Всё верно, исходный код нужен для того, чтобы его читать.
+    Спасибо за любопытство и участие!
+
+    Рекомендации по созданию дизайна для нового улучшенного csszengarden.com:
+
+    - CSS3? Конечно! Добавляйте префиксы для ВСЕХ необходимых браузеров.
+    - Адаптируйтесь; проверяйте дизайн на нескольких размерах экрана.
+    - Базовые браузеры для тестирования: IE9+, последние Chrome/Firefox/Safari и iOS/Android.
+    - Постепенная деградация приветствуется и даже очень рекомендуется.
+    - Используйте для оформления имена классов, не используйте ID.
+    - Веб-шрифты — это круто, только убедитесь, что у вас есть нужные лицензии.
+
+    И несколько советов по построению CSS-файла:
+
+    - Используйте :first-child, :last-child и :nth-child для обращения к элементам без классов.
+    - Используйте псевдоэлементы ::before и ::after для дополнительного оформления.
+    - Используйте сколько угодно фоновых картинок для элементов, перечислив их через запятую.
+    - Если будет нужно, используйте метод Келлума для замены текста картинкой http://goo.gl/GXxdI
+    - Не полагайтесь на дополнительные блоки в конце, используйте вместо них ::before и ::after.
+
+    Перевёл на русский Вадим Макеев, http://pepelsbey.net
+
+        
+-->
+
+<body id="css-zen-garden">
+    <div class="page-wrapper">
+        <section class="intro" id="zen-intro">
+            <header role="banner">
+                <h1>Сад CSS-дзена</h1>
+                <h2>Красота <abbr title="Cascading Style Sheets">CSS</abbr>-дизайна</h2>
+            </header>
+            <div class="summary" id="zen-summary" role="article">
+                <p>Демонстрация достижений <abbr title="Cascading Style Sheets">CSS</abbr>-дизайна. Выберите любой стиль из списка, чтобы применить его к этой странице.</p>
+                <p>Загрузите примеры: <a href="/examples/index" title="Исходный HTML-код этой страницы. Не должен меняться.">HTML-файл</a> и <a href="/examples/style.css" title="Пример CSS этой страницы. Файл, который нужно изменить.">CSS-файл</a></p>
+            </div>
+            <div class="preamble" id="zen-preamble" role="article">
+                <h3>Путь к просветлению</h3>
+                <p>Вдоль тёмной и печальной дороги лежат пережитки прошлого: специфичные браузерные теги, несовместимый <abbr title="Document Object Model">DOM</abbr>, сломанная поддержка <abbr title="Cascading Style Sheets">CSS</abbr> и брошенные браузеры.</p>
+                <p>Мы должны очистить разум от прошлого. Веб уже достиг просветления неустанными усилиями ребят вроде <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr> и разработчиков популярных браузеров.</p>
+                <p>Сад CSS-дзена приглашает вас расслабиться и помедитировать над важными уроками мастеров. Начните видеть ясно. Научитесь использовать проверенные временем техники на новый, вдохновляющий лад. Станьте едины с вебом.</p>
+            </div>
+        </section>
+        <div class="main supporting" id="zen-supporting" role="main">
+            <div class="explanation" id="zen-explanation" role="article">
+                <h3>Так что же это такое?</h3>
+                <p>Существует постоянная необходимость демонстрировать силу <abbr title="Cascading Style Sheets">CSS</abbr>. Сад CSS-дзена создан, чтобы восхищать, вдохновлять и побуждать к участию. Для начала взгляните на уже существующие дизайны в списке. Переход на каждый из них загрузит новые стили прямо на эту страницу. <abbr title="HyperText Markup Language">HTML</abbr> останется прежним, единственное, что изменится — внешний <abbr title="Cascading Style Sheets">CSS</abbr>-файл. Да, именно так.</p>
+                <p><abbr title="Cascading Style Sheets">CSS</abbr> позволяет целиком и полностью контролировать оформление гипертекстового документа. Единственный способ проиллюстрировать этот принцип, чтобы вызвать восхищение — это дать кисти в руки тем, кто может создать красоту на основе существующей структуры. Дизайнеры и разработчики вместе сделали много для красоты веба, но мы всегда можем пойти дальше.</p>
+            </div>
+            <div class="participation" id="zen-participation" role="article">
+                <h3>Участие</h3>
+                <p>Мы всегда ориентировались на качественный дизайн. Хорошее знание <abbr title="Cascading Style Sheets">CSS</abbr> тоже необходимо, раз уж вы пишете стили для этой страницы. Однако файлы примеров прокомментированы достаточно хорошо, чтобы даже новички в <abbr title="Cascading Style Sheets">CSS</abbr> смогли использовать их как отправную точку. Также обратите внимание на <a href="http://www.mezzoblue.com/zengarden/resources/">список ресурсов по <abbr title="Cascading Style Sheets">CSS</abbr></a>, где вы найдёте более подробные руководства и советы.</p>
+                <p>Вы можете изменять файл стилей как вам угодно, но не трогайте <abbr title="HyperText Markup Language">HTML</abbr>. Это может поначалу показаться странным, особенно если вы никогда не делали ничего подобного, но чтение рекомендованных ресурсов и файлы примеров станут для вас хорошим подспорьем.</p>
+                <p>Загрузите примеры <a href="/examples/index" title="Исходный HTML-код этой страницы. Не должен меняться.">HTML</a> и <a href="/examples/style.css" title="Пример CSS этой страницы. Файл, который нужно изменить.">CSS</a> для работы над ними локально. Как только ваш шедевр будет завершён (пожалуйста, не присылайте наполовину законченные работы), загрузите <abbr title="Cascading Style Sheets">CSS</abbr>-файл на сервер под вашим управлением. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Используйте контактную форму для отправки нам CSS-файла">Пришлите нам ссылку</a> на архив с этим файлом и всеми необходимыми для него ресурсами. И если мы решим использовать этот дизайн, то загрузим его и положим на наши сервера.</p>
+            </div>
+            <div class="benefits" id="zen-benefits" role="article">
+                <h3>Польза</h3>
+                <p>Зачем участвовать? Для признания, вдохновения и создания места, на которое можно сослаться, демонстрируя насколько великолепным может быть <abbr title="Cascading Style Sheets">CSS</abbr>. Этот сайт одинаково служит вдохновлением для тех, кто работает с вебом сегодня, инструментом для обучения для тех, кто будет работать завтра и галереей будущих техник, которых мы все ждём.</p>
+            </div>
+            <div class="requirements" id="zen-requirements" role="article">
+                <h3>Требования</h3>
+                <p>Там, где это возможно, мы хотели бы видеть использование в основном <abbr title="Cascading Style Sheets">CSS</abbr> 1 и 2. Использование <abbr title="Cascading Style Sheets">CSS</abbr> 3 и 4 должно быть ограничено только свойствами с широкой поддержкой, либо с надёжными фолбеками. Сад CSS-дзена — это, прежде всего, функциональный и практический <abbr title="Cascading Style Sheets">CSS</abbr>, а не набор последних трюков, которые увидят всего 2% пользователей. Единственное реальное требование — чтобы ваш <abbr title="Cascading Style Sheets">CSS</abbr> был валидным.</p>
+                <p>К счастью, разрабатывая таким образом, вы увидите, насколько хорошо различные браузеры поддерживают сегодня <abbr title="Cascading Style Sheets">CSS</abbr>. Следуя этим рекомендациям, вы добьётесь вполне одинаковых результатов во всех современных браузерах. Сейчас из-за огромного числа различных браузеров — особенно это заметно на мобильных — вёрстка с пиксельной точностью на всех платформах невозможна. Это нормально, но всё же постарайтесь проверить вёрстку в как можно большем числе браузеров. Ваш дизайн должен работать, как минимум, в IE9+ и в последних версиях Chrome, Firefox и во встроенных браузерах на iOS и Android (то есть для 90% пользователей).</p>
+                <p>Мы просим вас публиковать только оригинальные работы. Пожалуйста, уважайте авторские права и законы. Постарайтесь свести спорную тематику к минимуму и попробуйте использовать уникальные и интересные визуальные решения в ваших работах. Вряд ли нам нужен очередной дизайн, связанный с садом, мы уже прошли этот этап.</p>
+                <p>Это не только демонстрация, но и обучающий материал. Вы сохраняете полные авторские права на вашу графику (с некоторыми исключениями, см. <a href="http://www.mezzoblue.com/zengarden/submit/guidelines/">правила публикации</a>), но мы просим публиковать ваш <abbr title="Cascading Style Sheets">CSS</abbr> под лицензией Creative Commons, идентичной <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Информация о лицензии Сада дзена.">лицензии этого сайта</a>, так что другие смогут учиться по вашей работе.</p>
+                <p role="contentinfo">Автор <a href="http://www.mezzoblue.com/">Дейв Шей</a>. Трафик любезно предоставлен <a href="http://www.mediatemple.net/">mediatemple</a>. Теперь и в виде <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">книги «Сад дзена»</a>.</p>
+            </div>
+            <footer>
+                <a href="http://validator.w3.org/check/referer" title="Проверьте валидность HTML этого сайта" class="zen-validate-html">HTML</a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Проверьте валидность CSS этого сайта" class="zen-validate-css">CSS</a>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Лицензия Creative Commons для этого сайта: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
+                <a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Читайте о доступности этого сайта" class="zen-accessibility">A11y</a>
+                <a href="https://github.com/mezzoblue/csszengarden.com" title="Форкните этот сайт на Гитхабе" class="zen-github">GH</a>
+            </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+            <div class="wrapper">
+                <div class="design-selection" id="design-selection">
+                    <h3 class="select">Выберите дизайн:</h3>
+                    <nav role="navigation">
+                        <ul>
+                            <li>
+                                <a href="/tr/ru/221/" class="design-name">Mid Century Modern</a> автор <a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/220/" class="design-name">Garments</a> автор <a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/219/" class="design-name">Steel</a> автор <a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/218/" class="design-name">Apothecary</a> автор <a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/217/" class="design-name">Screen Filler</a> автор <a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/216/" class="design-name">Fountain Kiss</a> автор <a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/215/" class="design-name">A Robot Named Jimmy</a> автор <a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
+                            </li>
+                            <li>
+                                <a href="/tr/ru/214/" class="design-name">Verde Moderna</a> автор <a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="design-archives" id="design-archives">
+                    <h3 class="archives">Архивы:</h3>
+                    <nav role="navigation">
+                        <ul>
+                            <li class="next">
+                                <a href="/tr/ru/214/page1">
+                                    Следующие дизайны <span class="indicator">&rsaquo;</span>
+                                </a>
+                            </li>
+                            <li class="viewall">
+                                <a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="Все дизайны для Сада дзена.">
+                                    Все дизайны </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="zen-resources" id="zen-resources">
+                    <h3 class="resources">Ресурсы:</h3>
+                    <ul>
+                        <li class="view-css">
+                            <a href="/214/214.css" title="Исходный CSS-файл текущего дизайна.">
+                                <abbr title="Cascading Style Sheets">CSS</abbr> для этого дизайна </a>
+                        </li>
+                        <li class="css-resources">
+                            <a href="http://www.mezzoblue.com/zengarden/resources/" title="Ссылки на отличные ресурсы с информацией по использованию CSS.">
+                                Ресурсы по <abbr title="Cascading Style Sheets">CSS</abbr> </a>
+                        </li>
+                        <li class="zen-faq">
+                            <a href="http://www.mezzoblue.com/zengarden/faq/" title="Ответы на самые частые вопросы по Саду дзена.">
+                                Ответы на вопросы </a>
+                        </li>
+                        <li class="zen-submit">
+                            <a href="http://www.mezzoblue.com/zengarden/submit/" title="Отправьте ваш собственный CSS-файл.">
+                                Отправить дизайн </a>
+                        </li>
+                        <li class="zen-translations">
+                            <a href="http://www.mezzoblue.com/zengarden/translations/" title="Переведённые версии этого сайта.">
+                                Переводы </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!--
+
+    Эти избыточные дивы и спаны были изначально предназначены для вставки дополнительных картинок.
+    Сегодня у нас есть полная поддержка ::before и ::after, используйте лучше их.
+    Старые элементы останутся для исторической совместимости. Но могут однажды исчезнуть.
+        
+-->
+    <div class="extra1" role="presentation"></div>
+    <div class="extra2" role="presentation"></div>
+    <div class="extra3" role="presentation"></div>
+    <div class="extra4" role="presentation"></div>
+    <div class="extra5" role="presentation"></div>
+    <div class="extra6" role="presentation"></div>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>

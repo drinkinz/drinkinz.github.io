@@ -1,0 +1,29 @@
+html {
+    font: 20px/1.5 "Verdana", sans-serif;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    background: #eee;
+    border: 5px solid #ccc;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.main-column {
+    flex: 2;
+}
+
+.article {
+    background: mediumseagreen;
+    border: 5px solid seagreen;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    flex: 1;
+}

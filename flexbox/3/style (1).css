@@ -1,0 +1,11 @@
+.top {
+    background: black;
+    width: 100%;
+    min-width: 480px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.page {
+    margin: 0;
+}

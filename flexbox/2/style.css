@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block-first {
+    background: black;
+    min-height: 430px;
+    font-size: 48px;
+    color: white;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-right {
+    margin-left: 30px;
+    display: flex;
+    flex: 0 0 220px;
+    flex-direction: column;
+}
+
+.block-item {
+    background: black;
+    min-height: 200px;
+    font-size: 40px;
+    color: white;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.block-item:last-child {
+    margin-bottom: 0;
+}
