@@ -1,1 +1,1 @@
-# drinkinz.github.io
+# Drinkinz
