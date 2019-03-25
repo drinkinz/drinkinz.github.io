@@ -1,0 +1,23 @@
+.tile {
+	width: 350px;
+	border: 1px solid #000;
+	box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+	margin-bottom: 20px;
+	margin-right: 20px;
+	transition: box-shadow 0.5s ease-out 0.1s;
+	font: normal normal 18px/1.5 'Arial', sans-serif;
+}
+
+.tile:hover {
+	box-shadow: 10px 10px 0px rgb(255,0,0);
+}
+
+.tile__title {
+	font: normal bold 24px/1.5 'Arial', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.tile__description {
+	margin: 1em;
+}

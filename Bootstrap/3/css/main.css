@@ -1,0 +1,11 @@
+header {
+    height: 967px;
+    background-image: url("../img/back-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header div.menu {
+    height: 134px;
+    background: rgba(0, 0, 0, 0.3);
+}

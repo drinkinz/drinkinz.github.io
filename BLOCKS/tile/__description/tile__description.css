@@ -1,0 +1,7 @@
+
+.tile__description {
+    font: 2rem/1.5 "Arial", "Verdana", sans-serif;
+    border: solid;
+    margin: 0;
+    text-shadow: -100px 1px 10px rgba(203, 91, 32, 0.8);
+}
